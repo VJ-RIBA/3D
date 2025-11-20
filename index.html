@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D</title>
+
+  <!-- Model Viewer -->
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      padding: 12px;
+      text-align: center;
+      background: #111;
+      border-bottom: 1px solid #222;
+    }
+    model-viewer {
+      flex: 1;
+      width: 100%;
+      background: #000;
+    }
+    footer {
+      padding: 10px;
+      text-align: center;
+      background: #111;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <header><h1>3D</h1></header>
+
+    <model-viewer
+      src="https://www.dropbox.com/scl/fi/lmguhyiaq52xj636pe68i/model.glb?rlkey=m1ec099iugqte6zc5yprpa5wo&st=jimvcxin&dl=1"
+      alt="3D Model"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      exposure="1.1">
+    </model-viewer>
+
+    <footer>
+      Toque para girar • Zoom com dois dedos • Compatível com Safari
+    </footer>
+
+  </div>
+
+</body>
+</html>
